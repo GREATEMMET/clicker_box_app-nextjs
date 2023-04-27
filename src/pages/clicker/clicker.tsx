@@ -10,7 +10,7 @@ export default function clicker() {
       <div
         className={`${s.clickerPage} flex justify-center flex-col items-center bg-black`}
       >
-        <h1 className={`text-white text-[40px] mb-[50px] capitalize`}>Click to toggle</h1>
+        <h1 className={`text-white text-[40px] mb-[30px] capitalize`}>Click to toggle</h1>
         <BoxContainer />
       </div>
     </div>

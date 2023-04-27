@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .navLogo {
@@ -22,5 +25,12 @@
 
   :hover {
     color: skyblue;
+  }
+}
+
+@media screen and (max-width : 415px){
+  .navContainer{
+    flex-direction: column;
+    gap: 10px;
   }
 }
