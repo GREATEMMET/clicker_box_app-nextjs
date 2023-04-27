@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
+import s from "./Box.module.scss";
 
-export default function Box(props:any) {
-    let styles = {
-        backgroundColor: props.isFilled? "#ffffffc9" : "transparent"
-    }
+export default function Box(props: any) {
+  let styles = {
+    backgroundColor: props.isFilled ? "#ffffffc9" : "transparent",
+  };
   return (
-    <div className={`h-[100px] w-[100px] border-2 rounded-xl`} style={styles} onClick={()=>props.boxClicker(props.id)}></div>
-  )
+    <div
+      className={`${s.box}`}
+      style={styles}
+      onClick={() => props.boxClicker(props.id)}
+    ></div>
+  );
 }
